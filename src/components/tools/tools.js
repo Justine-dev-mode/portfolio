@@ -121,7 +121,7 @@ const AboutMe = () => {
                         </button>
                     </div>
                 </div>
-                <div className="md:w-2/2">
+                <div className="md:w-2/2 lg:w-1/2">
                     <h3 className="text-3xl font-semibold text-gray-700 mb-6">My Toolbox</h3>
                     <motion.div
                         className="grid grid-cols-2 sm:grid-cols-3 gap-8 md:grid-cols-3"
