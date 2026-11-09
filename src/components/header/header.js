@@ -24,7 +24,7 @@ const Header = () => {
                 }`}
             >
                 <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-                    I'm <span className="text-burnt-orange">Arnold Co</span>
+                    I'm <span className="text-burnt-orange">Justine Castro</span>
                 </h1>
                 <p className="mt-6 text-gray-700 text-lg md:text-xl leading-relaxed max-w-2xl">
                     A developer blending creativity and code. Inspired by the warmth of coffee culture, 
