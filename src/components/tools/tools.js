@@ -78,8 +78,8 @@ const AboutMe = () => {
                     A glimpse into my journey, skills, and the technologies I use to build impactful digital experiences.
                 </p>
             </div>
-            <div className="flex flex-col md:flex-row gap-12">
-                <div className="md:w-1/2 space-y-6">
+            <div className="flex flex-col md:flex-col gap-12 lg:flex-row">
+                <div className="md:w-2/2 space-y-6 lg:w-1/2">
                     <h3 className="text-3xl font-semibold text-gray-700">Get to Know Me</h3>
                     <motion.div
                         className="space-y-6"
@@ -121,10 +121,10 @@ const AboutMe = () => {
                         </button>
                     </div>
                 </div>
-                <div className="md:w-1/2">
+                <div className="md:w-2/2">
                     <h3 className="text-3xl font-semibold text-gray-700 mb-6">My Toolbox</h3>
                     <motion.div
-                        className="grid grid-cols-2 sm:grid-cols-3 gap-8"
+                        className="grid grid-cols-2 sm:grid-cols-3 gap-8 md:grid-cols-3"
                         variants={toolboxVariants}
                         initial="hidden"
                         animate={isInView ? "visible" : "hidden"}
@@ -136,7 +136,7 @@ const AboutMe = () => {
                                 className={`group cursor-pointer bg-white shadow-md p-6 rounded-lg hover:shadow-lg transition duration-300`}
                                 variants={toolVariants}
                             >
-                                <div className="text-4xl mx-auto" style={{ color: tool.color }}>
+                                <div className="text-4xl mx-auto justify-self-center" style={{ color: tool.color }}>
                                     {tool.icon}
                                 </div>
                                 <h4 className="text-center mt-4 text-lg font-medium group-hover:text-burnt-orange">
