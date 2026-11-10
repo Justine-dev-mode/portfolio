@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
+import { FaCode  } from 'react-icons/fa';
 
 const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -163,6 +164,12 @@ const Works = () => {
                 "https://i.imgur.com/Vu80a5S.jpeg",
             ],
         },
+        {
+            title: "Shopify Inventory Monitor",
+            description:
+            "Built a PHP-based inventory monitoring system that tracks Shopify product availability and sends email notifications when products go out of stock or become available again. Integrated Shopify webhooks and GraphQL API to monitor inventory changes, with automated email notifications through SendGrid. Also developed a settings page for managing monitored brands and deployed the system to Render for staging before moving it to production.",
+            technologies: ["PHP", "Shopify API", "GraphQL", "SendGrid", "Render"],
+        },
     ];
 
     const handleViewProject = (project) => {
@@ -262,17 +269,25 @@ const Works = () => {
                             </button>
                         </div>
                         <div className="p-6">
-                            <Slider {...sliderSettings}>
-                                {activeProject.images.map((img, idx) => (
-                                    <div key={idx}>
-                                        <img
-                                            src={img}
-                                            alt={`Slide ${idx + 1}`}
-                                            className="w-full h-80 object-contain rounded-lg px-2"
-                                        />
-                                    </div>
-                                ))}
-                            </Slider>
+                            {activeProject.images?.length > 0 ? (
+                                <Slider {...sliderSettings}>
+                                    {activeProject.images.map((img, idx) => (
+                                        <div key={idx}>
+                                            <img
+                                                src={img}
+                                                alt={`Slide ${idx + 1}`}
+                                                className="w-full h-80 object-contain rounded-lg px-2"
+                                            />
+                                        </div>
+                                    ))}
+                                </Slider>
+                            ) : (
+                                <div className="flex flex-col items-center justify-center py-16 text-gray-500">
+                                    <FaCode className="text-5xl mb-4" />
+                                    <p className="text-lg font-semibold">Backend Project</p>
+                                    <p className="text-sm">No visual previews available.</p>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </motion.div>
