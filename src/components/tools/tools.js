@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaPhp, FaWordpress, FaBootstrap } from 'react-icons/fa';
-import { SiTailwindcss, SiElectron, SiMysql, SiPostman } from 'react-icons/si';
+import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaPhp, FaWordpress, FaBootstrap, FaCode  } from 'react-icons/fa';
+import { SiTailwindcss, SiElectron, SiMysql, SiPostman, SiShopify  } from 'react-icons/si';
 import { IoLogoReact } from 'react-icons/io5';
 import { motion } from 'framer-motion';
 
@@ -17,6 +17,8 @@ const toolsData = [
     { name: 'WordPress', icon: <FaWordpress />, color: '#21759B', description: 'WordPress is a platform for creating websites and blogs.' },
     { name: 'Postman', icon: <SiPostman />, color: '#FF6C37', description: 'Postman is a tool for API development and testing.' },
     { name: 'MySQL', icon: <SiMysql />, color: '#00758F', description: 'MySQL is a relational database management system.' },
+    { name: 'Shopify', icon: <SiShopify />, color: '#7AB55C', description: 'Shopify is an e-commerce platform for building and managing online stores.',},
+    { name: 'Shopify Theme Development', icon: <FaCode />, color: '#7AB55C', description: 'Building and customizing Shopify themes using Liquid, JavaScript, CSS, and Shopify APIs.'},
 ];
 
 const toolboxVariants = {
@@ -124,7 +126,7 @@ const AboutMe = () => {
                 <div className="md:w-2/2 lg:w-1/2">
                     <h3 className="text-3xl font-semibold text-gray-700 mb-6">My Toolbox</h3>
                     <motion.div
-                        className="grid grid-cols-2 sm:grid-cols-3 gap-8 md:grid-cols-3"
+                        className="grid grid-cols-2 sm:grid-cols-3 gap-8 md:grid-cols-3 h-fit"
                         variants={toolboxVariants}
                         initial="hidden"
                         animate={isInView ? "visible" : "hidden"}

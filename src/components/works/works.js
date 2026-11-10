@@ -138,6 +138,31 @@ const Works = () => {
                 "https://i.imgur.com/RMiMCga.jpeg",
             ],
         },
+        {
+            title: "Perfa",
+            description:
+                "Developed custom Shopify homepage and product page templates using reusable sections and blocks, featuring modern, conversion-focused designs to enhance the customer shopping experience. Implemented SEO-friendly content and optimized scripts and images to improve page performance and loading speed.",    
+            technologies: ["Shopify", "Liquid"],
+            images: [
+                "https://i.imgur.com/Ez0XVsn.jpeg",
+                "https://i.imgur.com/QBpOMI0.jpeg",
+                "https://i.imgur.com/iuNsr4K.jpeg",
+                "https://i.imgur.com/hnp3900.jpeg",
+                "https://i.imgur.com/nfzA13X.jpeg",
+            ],
+        },
+        {
+            title: "Aero",
+            description:
+                "Customized a Shopify theme by creating custom sections and blocks, adding functional quantity selectors, building a product comparison section, and modifying the cart drawer. Worked on both the design and functionality to make the storefront more flexible and easier for customers to use.",    
+            technologies: ["Shopify", "Liquid"],
+            images: [
+                "https://i.imgur.com/LbLNJrO.jpeg",
+                "https://i.imgur.com/nk1aiA4.jpeg",
+                "https://i.imgur.com/VHzCx73.jpeg",
+                "https://i.imgur.com/Vu80a5S.jpeg",
+            ],
+        },
     ];
 
     const handleViewProject = (project) => {
