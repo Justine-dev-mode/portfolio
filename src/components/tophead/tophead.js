@@ -19,7 +19,7 @@ export default function TopHeader() {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-white shadow-md z-10">
-      <nav className="max-w-7xl mx-auto p-5 flex justify-between items-center">
+      <nav className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold text-gray-900">
           <a
             href="#"
@@ -31,13 +31,10 @@ export default function TopHeader() {
             className="hover:text-orange-400 transition-colors flex items-center gap-3"
           >
             <img
-              src={process.env.PUBLIC_URL + '/coffee.png'}
-              alt="Coffee Logo"
-              className="h-12 w-12"
+              src={process.env.PUBLIC_URL + '/jc.png'}
+              alt="JC Logo"
+              className="h-24 w-24"
             />
-            <span className="text-2xl font-semibold text-gray-900 mt-2">
-              Code Coffee
-            </span>
           </a>
         </div>
         <ul className="hidden md:flex space-x-12 text-lg">
