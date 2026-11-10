@@ -24,24 +24,24 @@ export default function Footer() {
                         <li>
                             <span className="font-semibold">Email:</span>{" "}
                             <a href="mailto:contact@example.com" className="hover:text-orange-400 transition">
-                                arnoldco022@gmail.com
+                                castrojustinep@gmail.com
                             </a>
                         </li>
                         <li>
                             <span className="font-semibold">Phone:</span>{" "}
                             <a href="tel:+1234567890" className="hover:text-orange-400 transition">
-                                +63 967-214-3987
+                                +63 995-107-2596
                             </a>
                         </li>
                         <li>
                             <div className="flex mt-6 space-x-8 text-lg justify-center md:justify-start">
-                                <a href="https://linkedin.com/in/arnold-co-356a8223a" target="_blank" rel="noreferrer"  className="hover:text-burnt-orange transition-all">
+                                <a href="https://linkedin.com/in/justine-castro-193366306" target="_blank" rel="noreferrer"  className="hover:text-burnt-orange transition-all">
                                     <FaLinkedin size={24} />
                                 </a>
-                                <a href="https://github.com/arnoldco022" target="_blank" rel="noreferrer"  className="hover:text-burnt-orange transition-all">
+                                <a href="https://github.com/Justine-dev-mode" target="_blank" rel="noreferrer"  className="hover:text-burnt-orange transition-all">
                                     <FaGithub size={24} />
                                 </a>
-                                <a href="mailto:arnoldco022@gmail.com" target="_blank" rel="noreferrer" className="hover:text-burnt-orange transition-all">
+                                <a href="mailto:castrojustinep@gmail.com" target="_blank" rel="noreferrer" className="hover:text-burnt-orange transition-all">
                                     <FaEnvelope size={24} />
                                 </a>
                             </div>
@@ -52,7 +52,7 @@ export default function Footer() {
             <div className="my-8 border-t border-gray-700"></div>
             <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center justify-center text-sm">
                 <p className="mb-4 md:mb-0">
-                    © {new Date().getFullYear()} ADC. All rights reserved.
+                    © {new Date().getFullYear()} JC. All rights reserved.
                 </p>
             </div>
         </footer>

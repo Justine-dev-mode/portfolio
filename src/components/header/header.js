@@ -39,13 +39,13 @@ const Header = () => {
                 </button>
 
                 <div className="flex mt-6 space-x-8 text-lg">
-                    <a href="https://linkedin.com/in/arnold-co-356a8223a" target="_blank" rel="noreferrer"  className="text-gray-700 hover:text-burnt-orange transition-all">
+                    <a href="https://linkedin.com/in/justine-castro-193366306" target="_blank" rel="noreferrer"  className="text-gray-700 hover:text-burnt-orange transition-all">
                         <FaLinkedin size={24} />
                     </a>
-                    <a href="https://github.com/arnoldco022" target="_blank" rel="noreferrer"  className="text-gray-700 hover:text-burnt-orange transition-all">
+                    <a href="https://github.com/Justine-dev-mode" target="_blank" rel="noreferrer"  className="text-gray-700 hover:text-burnt-orange transition-all">
                         <FaGithub size={24} />
                     </a>
-                    <a href="mailto:arnoldco022@gmail.com" target="_blank" rel="noreferrer" className="text-gray-700 hover:text-burnt-orange transition-all">
+                    <a href="mailto:castrojustinep@gmail.com " target="_blank" rel="noreferrer" className="text-gray-700 hover:text-burnt-orange transition-all">
                         <FaEnvelope size={24} />
                     </a>
                 </div>
