@@ -27,20 +27,25 @@ const Works = () => {
     const sectionRef = useRef(null);
 
     useEffect(() => {
-        const mobileView = window.matchMedia("(max-width: 768px)");
-        const threshold = mobileView.matches ? 0.3 : 0.4;
-    
         const observer = new IntersectionObserver(
             ([entry]) => {
-                if (entry.isIntersecting) setIsView(true);
+                if (entry.isIntersecting) {
+                    setIsView(true);
+                    observer.disconnect();
+                }
             },
-            { threshold }
+            {
+                threshold: 0,
+                rootMargin: "0px 0px -50px 0px",
+            }
         );
-    
-        if (sectionRef.current) observer.observe(sectionRef.current);
-    
+
+        const section = sectionRef.current;
+
+        if (section) observer.observe(section);
+
         return () => {
-            if (sectionRef.current) observer.unobserve(sectionRef.current);
+            observer.disconnect();
         };
     }, []);
 
